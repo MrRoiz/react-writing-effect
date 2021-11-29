@@ -4,25 +4,25 @@ import Cursor from './Cursor';
 interface TypingInterface{
     children?:string,
     typingSpeed?:string
-    blinker?:JSX.Element,
-    blinkerTimeLapse?:string,
+    cursor?:JSX.Element,
+    cursorTimeLapse?:string,
     onFinish?:Function
     className?:string,
     style?:React.CSSProperties
     styleText?:React.CSSProperties
-    styleBlinker?:React.CSSProperties
+    styleCursor?:React.CSSProperties
 }
 
 export default function Typing({
     typingSpeed = '100',
-    blinkerTimeLapse = '1',
+    cursorTimeLapse = '1',
     children = 'Default text',
     className,
     style,
     onFinish,
-    blinker,
+    cursor,
     styleText,
-    styleBlinker,
+    styleCursor,
 }:TypingInterface){
     
     const [textToShow, setTextToShow] = React.useState('')
@@ -41,7 +41,7 @@ export default function Typing({
     return (
         <span className={className} style={style}>
             <span style={styleText}>{textToShow}</span>
-            {blinker || <Cursor timeLapse={blinkerTimeLapse} style={styleBlinker}/>}
+            {cursor || <Cursor timeLapse={cursorTimeLapse} style={styleCursor}/>}
         </span>
     );
 };
