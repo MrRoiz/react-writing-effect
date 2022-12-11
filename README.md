@@ -39,9 +39,8 @@ React writing effect is a single component library, as you saw in the implementa
 |style|Css styles to use in the whole component|React.CSSProperties|undefined|N/A|
 |onFinish|A callback used at the end of current animation|Function|undefined|N/A|
 |cursor|If you want to use a custom blinker you're able to using this prop|JSX.Element|undefined|N/A|
-|cursor|If you want to use a custom blinker you're able to using this prop|JSX.Element|undefined|N/A|
 |styleText|Css styles to use just in the text of the component|React.CSSProperties|undefined|N/A|
-|styleText|Css styles to use just in the cursor of the component|React.CSSProperties|undefined|N/A|
+|styleCursor|Css styles to use just in the cursor of the component|React.CSSProperties|undefined|N/A|
 
 ### Children prop
 To pass the text to animate you have to pass it as a Children prop just like in the implementation example.
