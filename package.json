@@ -1,5 +1,5 @@
 {
-    "version": "0.1.4",
+    "version": "0.1.5",
     "license": "MIT",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
@@ -29,9 +29,9 @@
     },
     "repository": {
         "type" : "git",
-        "url" : "https://github.com/MrRoiz/react-writer-effect.git"
+        "url" : "https://github.com/MrRoiz/react-writing-effect.git"
     },
-    "homepage": "https://github.com/MrRoiz/react-writer-effect#readme",
+    "homepage": "https://github.com/MrRoiz/react-writing-effect#readme",
     "prettier": {
         "printWidth": 80,
         "semi": true,
